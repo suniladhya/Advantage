@@ -1,0 +1,4 @@
+logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+BasicConfigurator.Configure();
+
+logger.Info(Message);
