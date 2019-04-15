@@ -9,26 +9,26 @@ Such a program increases the performance and response time of an application.
 
 **NOTE**: _A thread can only be manipulated on a method. For example, MainThread needs a Main method to control the flow of a progam._
 
-Unstarted: Thread is created but not started yet
+**Unstarted: Thread is created but not started yet
 
-Running: Thread is executing a program
-
-WaitSleepJoin: Thread is blocked due to Wait, Sleep or Join method
-
-Suspended: Thread is suspended
-
-Stopped: Thread is stopped, either normally or aborted
-
-Start(): Changes state of thread to Running
-
-Join(): Wait for finishing a thread before executing calling thread
-
-Sleep(): Suspend a thread for specified number of miliseconds
-
-Resume(): Resume the execution of suspended thread
-
-Abort(): Terminates the execution of a thread
-
+**Running: Thread is executing a program
+**
+**WaitSleepJoin: Thread is blocked due to Wait, Sleep or Join method
+**
+**Suspended: Thread is suspended
+**
+**Stopped: Thread is stopped, either normally or aborted
+** 
+**Start(): Changes state of thread to Running
+** 
+**Join(): Wait for finishing a thread before executing calling thread
+** 
+**Sleep(): Suspend a thread for specified number of miliseconds
+**
+**Resume(): Resume the execution of suspended thread
+**
+**Abort(): Terminates the execution of a thread
+ 
 CurrentThread: Returns a reference of the current thread
 
 IsAlive: Returns true if thread has not been terminated or aborted
