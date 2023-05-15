@@ -9,7 +9,14 @@ HttpUtility.HtmlDecode(Regex.Replace(input, "<[^>]*>", string.Empty)).TrimEnd();
 
 # Javascript
 ### 1. Lexical scope:
+[Hoisting, Shadowing](https://medium.com/@shankar.bala96/javascript-hoisting-variable-shadowing-scope-and-closures-27ed946c8769)
 
+Hoisting : during the compilation, variables and function declarations are moved to the top of their scope before code executes.
+```
+let l= 3; 
+var l = 4; 
+console.log(l); // Uncaught SyntaxError: Identifier 'l' has already been declared
+```
 ### 2. Arrow Function
 () => {}
 ```
@@ -32,7 +39,9 @@ const profile = {
 	}
 }
 profile.setName('John Doe');
-console.log(window.firstName); // Note: profile don't ahve an value
+console.log(window.firstName); // John
+console.log(profile.firstName); // undefined
+// Note: profile don't have an value
 ```
 ```
 var x = function(){
@@ -60,7 +69,9 @@ const profile = {
 	}
 }
 profile.setName('John Doe');
-console.log(profile.firstName); // Note: profile has value
+console.log(profile.firstName); // John 
+console.log(window.firstName); // John
+// Note: profile has value
 ```
 Arrow operators dont take first value by default;
 ```
@@ -70,8 +81,8 @@ var z= function(...arguments){console.log(arguments[0])}// works
 z(1,2,3);
 ```
 ### 3. Closure
-Lexical scoping allows the variable i the outer funtion are available to the inner function
-Problem statement1 : What if the outer vsr is not available
+Lexical scoping allows the variable in the outer funtion are available to the inner function
+Problem statement1 : What if the outer var is not available
 Problem statement2 : what if inner function is moved to other place
 
 [link](https://www.youtube.com/watch?v=-xqJo5VRP4A)
